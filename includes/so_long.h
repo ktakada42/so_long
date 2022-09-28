@@ -1,27 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   so_long.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ktakada <ktakada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/28 14:59:27 by ktakada           #+#    #+#             */
-/*   Updated: 2022/09/28 16:22:11 by ktakada          ###   ########.fr       */
+/*   Created: 2022/09/28 16:46:54 by ktakada           #+#    #+#             */
+/*   Updated: 2022/09/28 16:46:57 by ktakada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./includes/so_long.h"
+#ifndef SO_LONG_H
+# define SO_LONG_H
 
-int	main(void)
-{
-	void	*mlx_ptr;
-	void	*win_ptr;
+# include "../minilibx-linux/mlx.h"
+# include "../libft/includes/libft.h"
 
-	mlx_ptr = mlx_init();
-	win_ptr = mlx_new_window(mlx_ptr, 500, 500, "test");
-	if (win_ptr == NULL)
-	{
-		return (0);
-	}
-	mlx_loop(mlx_ptr);
-}
+#endif
