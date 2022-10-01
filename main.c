@@ -18,10 +18,16 @@ int	main(void)
 	void	*win_ptr;
 
 	mlx_ptr = mlx_init();
+	if (mlx_ptr == NULL)
+	{
+		ft_putendl_fd("error at mlx_init()", 2);
+		exit(1);
+	}
 	win_ptr = mlx_new_window(mlx_ptr, 500, 500, "test");
 	if (win_ptr == NULL)
 	{
-		return (0);
+		ft_putendl_fd("error at mlx_new_window()", 2);
+		exit(1);
 	}
 	mlx_loop(mlx_ptr);
 }

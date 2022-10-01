@@ -15,5 +15,7 @@
 
 # include "../minilibx-linux/mlx.h"
 # include "../libft/includes/libft.h"
+# include <stdio.h>
+# include <errno.h>
 
 #endif
