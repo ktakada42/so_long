@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.h                                          :+:      :+:    :+:   */
+/*   map.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ktakada <ktakada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/28 16:46:54 by ktakada           #+#    #+#             */
-/*   Updated: 2022/09/28 16:46:57 by ktakada          ###   ########.fr       */
+/*   Created: 2022/10/01 17:42:45 by ktakada           #+#    #+#             */
+/*   Updated: 2022/10/01 17:42:46 by ktakada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SO_LONG_H
-# define SO_LONG_H
+#include "../includes/so_long.h"
 
-# include "../minilibx-linux/mlx.h"
-# include "../libft/includes/libft.h"
-# include "config.h"
-# include "map.h"
-# include <stdio.h>
-# include <errno.h>
-
-#endif
+bool parse_map(char *map)
+{
+	return false;
+}
