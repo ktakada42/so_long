@@ -23,7 +23,7 @@ int	main(void)
 		ft_putendl_fd("error at mlx_init()", 2);
 		exit(1);
 	}
-	win_ptr = mlx_new_window(mlx_ptr, 500, 500, "test");
+	win_ptr = mlx_new_window(mlx_ptr, WIN_WIDTH, WIN_HEIGHT, WIN_TITLE);
 	if (win_ptr == NULL)
 	{
 		ft_putendl_fd("error at mlx_new_window()", 2);

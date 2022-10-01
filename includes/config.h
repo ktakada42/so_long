@@ -1,22 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.h                                          :+:      :+:    :+:   */
+/*   config.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ktakada <ktakada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/28 16:46:54 by ktakada           #+#    #+#             */
-/*   Updated: 2022/09/28 16:46:57 by ktakada          ###   ########.fr       */
+/*   Created: 2022/10/01 17:47:54 by ktakada           #+#    #+#             */
+/*   Updated: 2022/10/01 17:47:54 by ktakada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SO_LONG_H
-# define SO_LONG_H
+#ifndef CONFIG_H
+# define CONFIG_H
 
-# include "../minilibx-linux/mlx.h"
-# include "../libft/includes/libft.h"
-# include "config.h"
-# include <stdio.h>
-# include <errno.h>
+# define WIN_WIDTH 500
+# define WIN_HEIGHT 500
+# define WIN_TITLE "so_long"
 
 #endif
