@@ -17,7 +17,7 @@
 # include "../libft/includes/libft.h"
 # include "config.h"
 # include "map.h"
-# include <stdio.h>
+# include "utils.h"
 # include <errno.h>
 
 #endif

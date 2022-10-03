@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   utils.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ktakada <ktakada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/28 14:59:27 by ktakada           #+#    #+#             */
-/*   Updated: 2022/09/28 16:22:11 by ktakada          ###   ########.fr       */
+/*   Created: 2022/10/03 23:02:10 by ktakada           #+#    #+#             */
+/*   Updated: 2022/10/03 23:02:11 by ktakada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./includes/so_long.h"
+#ifndef UTILS_H
+#define UTILS_H
 
-int	main(void)
-{
-	void	*mlx_ptr;
-	void	*win_ptr;
+# include <stdio.h>
 
-	mlx_ptr = mlx_init();
-	if (mlx_ptr == NULL)
-		exit_with_error("Error at mlx_init()");
-	win_ptr = mlx_new_window(mlx_ptr, WIN_WIDTH, WIN_HEIGHT, WIN_TITLE);
-	if (win_ptr == NULL)
-		exit_with_error("Error at mlx_new_window()");
-	mlx_loop(mlx_ptr);
-}
+void exit_with_error(char *error_message);
+
+#endif
