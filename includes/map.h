@@ -13,6 +13,9 @@
 #ifndef MAP_H
 #define MAP_H
 
+# include <fcntl.h>
+# include <stdbool.h>
+
 bool parse_map(char *map);
 
 #endif

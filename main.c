@@ -12,16 +12,21 @@
 
 #include "./includes/so_long.h"
 
-int	main(void)
+int	main(int argc, char **argv)
 {
 	void	*mlx_ptr;
 	void	*win_ptr;
 
+	errno = 0;
+	if (argc != 2)
+		exit_with_error("Need 1 arg as map");
 	mlx_ptr = mlx_init();
 	if (mlx_ptr == NULL)
 		exit_with_error("Error at mlx_init()");
 	win_ptr = mlx_new_window(mlx_ptr, WIN_WIDTH, WIN_HEIGHT, WIN_TITLE);
 	if (win_ptr == NULL)
 		exit_with_error("Error at mlx_new_window()");
+	if (parse_map(argv[1]))
+		return(0);
 	mlx_loop(mlx_ptr);
 }

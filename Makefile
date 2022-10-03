@@ -18,7 +18,9 @@ CFLAGS := -Wall -Wextra -Werror
 
 MINILIBXFLAGS := -L/usr/X11R6/lib -lX11 -lXext -framework OpenGL -framework AppKit
 
-SRCS := main.c
+SRCS := main.c \
+		./src/map.c \
+		./src/utils.c \
 
 LIBFTDIR := ./libft
 
@@ -37,7 +39,7 @@ $(NAME): $(SRCS)
 	make -C $(MINILIBXDIR)
 	cp $(LIBFTDIR)/$(LIBFTAR) .
 	cp $(MINILIBXDIR)/$(MINILIBXAR) .
-	$(CC) $(CFLAGS) $(MINILIBXFLAGS) $(SRCS) $(MINILIBXAR) -o $(NAME)
+	$(CC) $(CFLAGS) $(MINILIBXFLAGS) $(SRCS) $(LIBFTAR) $(MINILIBXAR) -o $(NAME)
 
 .PHONY: clean
 clean:
