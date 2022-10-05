@@ -13,10 +13,10 @@
 #ifndef SO_LONG_H
 # define SO_LONG_H
 
-# include "../minilibx-linux/mlx.h"
+# include <errno.h>
 # include "config.h"
 # include "map.h"
 # include "utils.h"
-# include <errno.h>
+# include "../minilibx-linux/mlx.h"
 
 #endif
