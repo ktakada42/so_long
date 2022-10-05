@@ -15,6 +15,6 @@
 int	key_hook(int keycode, void *param)
 {
 	if (param == NULL && keycode == ESC)
-		exit(0);
+		exit(EXIT_SUCCESS);
 	return (0);
 }

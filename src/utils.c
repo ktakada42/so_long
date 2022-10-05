@@ -18,5 +18,5 @@ void	exit_with_error(char *error_message)
 		ft_putendl_fd(error_message, 2);
 	else
 		perror(error_message);
-	exit(1);
+	exit(EXIT_FAILURE);
 }
