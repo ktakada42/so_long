@@ -11,12 +11,12 @@
 /* ************************************************************************** */
 
 #ifndef UTILS_H
-#define UTILS_H
+# define UTILS_H
 
 # include <errno.h>
 # include <stdio.h>
 # include "../libft/includes/libft.h"
 
-void exit_with_error(char *error_message);
+void	exit_with_error(char *error_message);
 
 #endif

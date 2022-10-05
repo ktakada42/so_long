@@ -12,7 +12,7 @@
 
 #include "../includes/utils.h"
 
-void exit_with_error(char *error_message)
+void	exit_with_error(char *error_message)
 {
 	if (errno == 0)
 		ft_putendl_fd(error_message, 2);
