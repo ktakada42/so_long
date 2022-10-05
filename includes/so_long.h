@@ -14,7 +14,6 @@
 # define SO_LONG_H
 
 # include "../minilibx-linux/mlx.h"
-# include "../libft/includes/libft.h"
 # include "config.h"
 # include "map.h"
 # include "utils.h"
