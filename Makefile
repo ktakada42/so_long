@@ -60,3 +60,7 @@ fclean:
 
 .PHONY: re
 re: fclean all
+
+.PHONY: norm
+norm:
+	norminette get_next_line includes libft src main.c | grep Error
