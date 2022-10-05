@@ -27,6 +27,8 @@ int	main(int argc, char **argv)
 	if (win_ptr == NULL)
 		exit_with_error("Error at mlx_new_window()");
 	if (parse_map(argv[1]))
-		return (0);
-	mlx_loop(mlx_ptr);
+	{
+		mlx_key_hook(win_ptr, key_hook, NULL);
+		mlx_loop(mlx_ptr);
+	}
 }

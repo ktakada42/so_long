@@ -22,6 +22,7 @@ SRCSDIR := ./src/
 
 SRCS := map.c \
 		utils.c \
+		events.c \
 
 SRCS := $(addprefix $(SRCSDIR), $(SRCS))
 

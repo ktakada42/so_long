@@ -1,23 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.h                                          :+:      :+:    :+:   */
+/*   events.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ktakada <ktakada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/28 16:46:54 by ktakada           #+#    #+#             */
-/*   Updated: 2022/09/28 16:46:57 by ktakada          ###   ########.fr       */
+/*   Created: 2022/10/05 14:58:12 by ktakada           #+#    #+#             */
+/*   Updated: 2022/10/05 14:58:12 by ktakada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SO_LONG_H
-# define SO_LONG_H
+#include "../includes/events.h"
 
-# include <errno.h>
-# include "events.h"
-# include "config.h"
-# include "map.h"
-# include "utils.h"
-# include "../minilibx-linux/mlx.h"
-
-#endif
+int	key_hook(int keycode, void *param)
+{
+	if (param == NULL && keycode == ESC)
+		exit(0);
+	return (0);
+}

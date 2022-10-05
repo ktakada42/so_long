@@ -16,5 +16,6 @@
 # define WIN_WIDTH 500
 # define WIN_HEIGHT 500
 # define WIN_TITLE "so_long"
+# define ESC 65307
 
 #endif
