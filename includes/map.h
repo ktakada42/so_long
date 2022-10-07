@@ -16,6 +16,7 @@
 # include <fcntl.h>
 # include <stdbool.h>
 # include "utils.h"
+# include "../libft/includes/libft.h"
 
 bool	parse_map(char *map);
 
